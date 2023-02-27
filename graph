@@ -1,0 +1,8 @@
+import pandas as pd
+mydict={
+        "Drivers":["Verstappen","Hamilton","Leclerc"],
+        "Ages": [54,87,12],
+        "winning races":[27,120,20]
+        }
+df=pd.DataFrame(mydict)
+display(df)
