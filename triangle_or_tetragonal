@@ -1,0 +1,47 @@
+def geometry(x):
+  if len(x)==4:
+    a = x[0]
+    b = x[1]
+    c = x[2]
+    d = x[3]
+    if a==b==c==d:
+      print("x is a cube")
+    elif a==b and c==d:
+      print("it is a 	rectangle") 
+    elif a==c and b==d:
+      print("it is a 	rectangle") 
+    elif a==d and b==c:
+      print("it is a 	rectangle") 
+    else:
+      print("it is just a normal tetragonal ")   
+  elif len(x)==3:
+    a = x[0]
+    b = x[1]  
+    c = x[2]
+    if int(a+b) > int(c) and int(b+c)>int(a) and int(a+c)>int(b):
+       if a==b==c:
+         print("it is a	equilateral triangle")
+       elif a==b or a==c or b==c:
+         print("it is a isosceles triangle")
+       else:
+         print("it is a 	scalene triangle")  
+    else :
+       print("it is not a triangle")  
+  else:
+    print("it is nothing")
+while True:
+  eleman_sayısı = int(input())  
+  if eleman_sayısı==3:
+    a=int(input())  
+    b=int(input())     
+    c=int(input())    
+    geometry([a,b,c])  
+    break
+  elif eleman_sayısı==4:
+    a=int(input())  
+    b=int(input())     
+    c=int(input())      
+    d=int(input()) 
+    geometry([a,b,c,d])     
+  else:
+     print("f") 
